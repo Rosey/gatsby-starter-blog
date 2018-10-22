@@ -1,15 +1,18 @@
 import Typography from 'typography'
-import Wordpress2016 from 'typography-theme-wordpress-2016'
+import githubTheme from 'typography-theme-github'
+import CodePlugin from 'typography-plugin-code';
 
-Wordpress2016.overrideThemeStyles = () => ({
-  'a.gatsby-resp-image-link': {
-    boxShadow: 'none',
+githubTheme.plugins = [
+  new CodePlugin()
+];
+
+githubTheme.overrideThemeStyles = () => ({
+  'a': {
+    color: '#0042FF',
   },
 })
 
-delete Wordpress2016.googleFonts
-
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(githubTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {

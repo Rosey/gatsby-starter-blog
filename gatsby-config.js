@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Rose Robertson',
+    author: 'Rose Robertson',
+    description: '',
+    siteUrl: 'https://roserobertson.me/',
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
@@ -62,7 +62,6 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
       },
     },
     `gatsby-plugin-offline`,
